@@ -1,5 +1,7 @@
 # kit-qs
 
+[![Circle CI](https://circleci.com/gh/jskit/kit-qs/tree/master.svg?style=svg)](https://circleci.com/gh/jskit/kit-qs/tree/master)
+
 - 支持获取完整的 url 参数，拿参数
 - 支持输出标准的 url 格式，用于分享
 
