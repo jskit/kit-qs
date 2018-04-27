@@ -1,10 +1,10 @@
 
 import stringify from './stringify'
 import parse from './parse'
-import formatUrl from './formats'
+import format from './format'
 
 export default {
-  formatUrl,
+  format,
   parse,
   stringify,
 }
