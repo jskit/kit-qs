@@ -25,11 +25,11 @@ function stringify(params, options = {}) {
   const { delimiter = defaults.delimiter } = opts
 
   const arr = []
-  for (const key in opts) {
-    if (!opts[key]) {
-      delete opts[key]
+  for (const key in params) {
+    if (!params[key]) {
+      delete params[key]
     } else {
-      arr.push(`${key}=${opts[key]}`)
+      arr.push(`${key}=${params[key]}`)
     }
   }
   return arr.join(delimiter)

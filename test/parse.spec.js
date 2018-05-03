@@ -15,7 +15,7 @@ const result2 = {
   activityId: '1',
 }
 
-describe('qs', () => {
+describe('kit-qs', () => {
   describe('parse', () => {
     it('test1', () => {
       const result = parse(test1)
