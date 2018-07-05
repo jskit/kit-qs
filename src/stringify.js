@@ -29,7 +29,7 @@ function stringify(params, options = {}) {
     if (!params[key]) {
       delete params[key]
     } else {
-      arr.push(`${key}=${params[key]}`)
+      arr.push(`${key}=${encodeURIComponent(params[key])}`)
     }
   }
   return arr.join(delimiter)

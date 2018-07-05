@@ -1,3 +1,5 @@
+import copy from './copy';
+
 /**
  * parse 解析url
  *
@@ -43,7 +45,7 @@ function parse(url, key) {
     }
   }
 
-  return key ? params[key] : params;
+  return key ? copy(params[key]) : copy(params);
 }
 
 export default parse
