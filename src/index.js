@@ -1,5 +1,5 @@
 
-import copy from './parse'
+import copy from './copy'
 import parse from './parse'
 import format from './format'
 import stringify from './stringify'
