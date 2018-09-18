@@ -1,12 +1,5 @@
-
-import copy from './copy'
-import parse from './parse'
-import format from './format'
-import stringify from './stringify'
-
-export default {
-  copy,
-  format,
-  parse,
-  stringify,
-}
+// 工具类
+export copy from './copy'
+export parse from './parse'
+export format from './format'
+export stringify from './stringify'
