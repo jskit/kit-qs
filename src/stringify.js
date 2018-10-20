@@ -26,7 +26,7 @@ function stringify(params, options = {}) {
 
   const arr = []
   for (const key in params) {
-    if (!params[key]) {
+    if (typeof params[key] === 'undefined') {
       delete params[key]
     } else {
       arr.push(`${key}=${encodeURIComponent(params[key])}`)
