@@ -31,7 +31,9 @@
     "url": "https://github.com/jskit/kit-qs/issues"
   },
   "homepage": "https://github.com/jskit/kit-qs#readme",
-  "dependencies": {},
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
   "devDependencies": {
     "assets": "^3.0.0",
     "autoprefixer": "^8.0.0",
