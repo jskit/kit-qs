@@ -1,6 +1,6 @@
 
-function deepCopy(data = '') {
+function copy(data = '') {
   return JSON.parse(JSON.stringify(data));
 }
 
-export default deepCopy
+export default copy

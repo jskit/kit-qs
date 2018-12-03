@@ -23,7 +23,9 @@ function parse(url, key) {
   let value
   let isArray
 
-  // 处理异常参数
+  // 处理没有 ? 的情况
+  url = url.indexOf('?') === -1 ? ('?' + url) : url;
+  // 处理异常参数，如多个 ?
   url = url.replace(/\?/g, '&').replace('&', '?');
 
   /* eslint prefer-destructuring: 0 */
@@ -47,5 +49,7 @@ function parse(url, key) {
 
   return key ? copy(params[key]) : copy(params);
 }
+
+console.log(parse('id=xx&c=xx'))
 
 export default parse

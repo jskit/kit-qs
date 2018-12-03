@@ -10,9 +10,11 @@ const result1 = {
   id: '646156',
   platform: '5',
 }
-const test2 = 'haoshiqi://com.doweidu/activityshare?activityId=1'
+const test2 = 'haoshiqi://com.doweidu/activityshare?activityId=1&xxx=23'
+const test3 = 'activityId=1&xxx=23'
 const result2 = {
   activityId: '1',
+  xxx: '23',
 }
 
 describe('kit-qs', () => {
@@ -23,6 +25,10 @@ describe('kit-qs', () => {
     })
     it('test2', () => {
       const result = parse(test2)
+      assert.equal(JSON.stringify(result), JSON.stringify(result2))
+    })
+    it('test3', () => {
+      const result = parse(test3)
       assert.equal(JSON.stringify(result), JSON.stringify(result2))
     })
   })
