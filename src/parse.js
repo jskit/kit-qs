@@ -50,6 +50,6 @@ function parse(url, key) {
   return key ? copy(params[key]) : copy(params);
 }
 
-console.log(parse('id=xx&c=xx'))
+// console.log(parse('id=xx&c=xx'))
 
 export default parse
